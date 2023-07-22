@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+    z-index: 1 !important;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 450px;
+    height: 450px;
+}
+
+.swiper-pagination {
+    bottom: var(--swiper-pagination-bottom, -5px) !important;
+    top: var(--swiper-pagination-top, auto);
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #111827;
+}
+
+.style14 {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.w-800 {
+    width: 700px;
+}
+
+
+.w-600 {
+    width: 600px;
+}
+
+.h-600 {
+    height: 600px;
+}
+
+.w-500 {
+    width: 500px;
+}
+
+.h-500 {
+    height: 500px;
+}
+
+.large-font {
+    font-size: xxx-large;
+}
+
+.top-20 {
+    position: relative;
+    top: 20vh;
+}
+
+.bottom-left-32 {
+    bottom: 38%;
+    left: 82%;
+}
+
+.hovewr {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.blg-32 {
+    bottom: 42%;
+    left: 82%;
+}
+
+.fjw {
+    background-color: #FAFAFA;
+}
+
+.flx {
+    display: flex;
+}
+
+#lisa {
+    position: relative;
+    transition: all 0.5s;
+}
+
+#lisa:hover {
+    color: rgb(37 99 235);
+    z-index: 1;
+}
+
+#lisa:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    color: transparent;
+    background: rgb(37 99 235);
+    height: 1px;
+    text-align: left;
+    margin: 0;
+    opacity: 0;
+}
+
+#lisa:hover:after {
+    width: 100%;
+    z-index: -10;
+    animation: fill 0.5s forwards;
+    -webkit-animation: fill 0.5s forwards;
+    -moz-animation: fill 0.5s forwards;
+    opacity: 1;
+}
+
+#menu {
+    transform: translate(-50%, -50%);
+    transition: all 1s ease;
+}
+
+#container {
+    transition: all 0.6s ease;
+}
+
+.scroll-up {
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.flexi {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.flax {
+    flex-direction: row;
+}
+
+.main {
+    display: flex !important;
+}
+
+.nothing {
+    display: none !important;
+}
