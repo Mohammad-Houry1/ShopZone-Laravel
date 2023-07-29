@@ -516,9 +516,11 @@ const subCategories = [
 //     resp.value = defaultProd.value;
 //     resp.value = resp.value.filter((item) => item.Category === index);
 // };
+let newProdList;
 const filterByCat = (index) => {
     resp.value = defaultProd.value;
     resp.value = resp.value.filter((item) => item.Category === index);
+    newProdList = resp.value;
 };
 const filterByRating = (index) => {
     resp.value = defaultProd.value;
